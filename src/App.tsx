@@ -12,6 +12,16 @@ function App() {
             <div className="navbar-brand">
               <span className="navbar-item">CryptoNow</span>
             </div>
+            <div className="navbar-end">
+              <a
+                className="navbar-item"
+                href="https://github.com/Palfonsoag/cryptoNow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CryptoNow Repo
+              </a>
+            </div>
           </nav>
         </header>
       </div>
