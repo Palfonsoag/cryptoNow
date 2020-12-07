@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Today from "./components/Today";
+import History from "./components/History";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <div className="topheader">
+        <header className="container">
+          <nav className="navbar">
+            <div className="navbar-brand">
+              <span className="navbar-item">CryptoNow</span>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <section className="results--section">
+        <div className="container">
+          <h1>
+            CryptoNow is a realtime price information about<br></br> BTC, ETH
+            and LTC.
+          </h1>
+        </div>
+        <div className="results--section__inner">
+          <Today />
+          <History />
+        </div>
+      </section>
     </div>
   );
 }
